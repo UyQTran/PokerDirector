@@ -11,14 +11,16 @@ const styles = {
         color: 'white',
         height: 48,
         padding: '0 30px',
-        boxShadow: '0 3px 5px 2px',
+    },
+    label: {
+        fontWeight: 'bold'
     },
 };
 
-const StartButton = ({classes, children, className, ...other}) => (
+const TheCrewButton = ({classes, children, className, ...other}) => (
     <Button className={classNames(classes.root, className)} {...other}>
         {children || 'class names'}
     </Button>
 );
 
-export default withStyles(styles)(StartButton);
+export default withStyles(styles)(TheCrewButton);
